@@ -12,7 +12,7 @@ export async function GET(): Promise<NextResponse<HealthResponse>> {
     status: 'ok',
     timestamp: new Date().toISOString(),
     uptime: Math.floor(process.uptime()), // seconds
-    version: '1.0.0',
+    version: process.env.APP_VERSION ?? '1.0.0',
   };
 
   return NextResponse.json(response, { status: 200 });
