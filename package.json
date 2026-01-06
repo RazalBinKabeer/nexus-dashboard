@@ -6,10 +6,15 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "type-check": "tsc --noEmit"
   },
   "dependencies": {
+    "@prisma/adapter-pg": "^7.2.0",
+    "@prisma/client": "^7.2.0",
     "next": "16.1.1",
+    "pg": "^8.16.3",
+    "prisma": "^7.2.0",
     "react": "19.2.3",
     "react-dom": "19.2.3"
   },
@@ -23,6 +28,6 @@
     "eslint-config-prettier": "^10.1.8",
     "prettier": "^3.7.4",
     "tailwindcss": "^4",
-    "typescript": "^5"
+    "typescript": "^5.9.3"
   }
 }
